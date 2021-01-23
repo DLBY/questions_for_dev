@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Questions pour un champion</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+  </head>
+  <body class="bg-gray-800">
+    <h1 class="text-2xl text-gray-100 text-center mt-10">Questions pour un champion</h1>
+    <div class="flex items-center justify-center h-screen -mt-10">
+      <div class="flex flex-col justify-center items-center space-y-6 bg-indigo-800 text-white font-bold rounded-lg border shadow-lg p-10">
+        6 questions à la suite, t'es prêt ?
+      
+      <form class="inline-block relative mt-2">
+        <select type="select" class="text-black block appearance-none searchQuest bg-gray-100 border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" placeholder="Type here" id="num_question">
+          <option>Oui</option>
+          <option>Oui</option>
+        </select>
+      </form>
+      <button class="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 hover:shadow-xl" type="submit" style="transition: all .15s ease" id="submit_question">
+        C'est parti !
+      </button>
+    </div>
+    </div>
+
+    <div id="questions"></div>
+    <div id="modal" class="modal hidden"></div>
+    
+    <script src="index.js" async defer></script>
+    <script src="select_form.js" async defer></script>
+
+  </body>
+</html>
